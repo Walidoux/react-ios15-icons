@@ -1,0 +1,15 @@
+{
+  "plugins": ["prettier", "simple-import-sort"],
+  "extends": ["standard-with-typescript", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "project": "./tsconfig.json"
+  },
+  "ignorePatterns": ["**/*.d.ts"],
+  "rules": {
+    "prettier/prettier": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
+  }
+}
