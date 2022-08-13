@@ -1,0 +1,97 @@
+{
+  "version": "1.0.0-dev",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/react-ios15-icons.esm.js",
+  "description": "A react library providing ios-15 icons.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Walidoux/react-ios15-icons"
+  },
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "lint:check-types": "tsc --noemit",
+    "lint:typescript": "eslint \"**/*.{ts,tsx}\"",
+    "lint:prettier": "prettier \".\" --check",
+    "lint:commit": "commitlint",
+    "release": "semantic-release --branches release",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@size-limit/preset-small-lib": "^8.0.1",
+    "@size-limit/webpack": "^8.0.1",
+    "@size-limit/webpack-why": "^8.0.1",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "semantic-release": "^19.0.3",
+    "size-limit": "^8.0.1",
+    "tailwindcss": "^3.1.8",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": [
+    "react",
+    "icons",
+    "apple",
+    "ios",
+    "typescript",
+    "tsx"
+  ],
+  "bugs": {
+    "url": "https://github.com/Walidoux/react-ios15-icons/issues"
+  },
+  "homepage": "https://github.com/Walidoux/react-ios15-icons/#readme",
+  "name": "react-ios15-icons",
+  "author": {
+    "name": "Walidoux",
+    "url": "https://walidkorchi.com/"
+  },
+  "size-limit": [
+    {
+      "path": "dist/react-ios15-icons.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/react-ios15-icons.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "publishConfig": {
+    "access": "restricted"
+  }
+}
