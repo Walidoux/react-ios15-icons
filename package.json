@@ -32,13 +32,13 @@
     "build": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
+    "release": "semantic-release --branches release",
+    "generate": "plop",
     "lint:check-types": "tsc --noemit",
     "lint:typescript": "eslint \"**/*.{ts,tsx}\"",
     "lint:prettier": "prettier \".\" --check",
     "lint:commit": "commitlint",
-    "lint:staged": "lint-staged",
-    "release": "semantic-release --branches release",
-    "semantic-release": "semantic-release"
+    "lint:staged": "lint-staged"
   },
   "dependencies": {
     "classnames": "^2.3.1"
@@ -69,6 +69,7 @@
     "react-dom": "^18.2.0",
     "semantic-release": "^19.0.3",
     "size-limit": "^8.0.1",
+    "plop": "^3.1.1",
     "tailwindcss": "^3.1.8",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
