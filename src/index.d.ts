@@ -3,6 +3,7 @@ import type {
   CellularProps,
   IconProps,
   PhoneProps,
+  SpeakerProps,
   WifiProps
 } from './IconProps'
 
@@ -12,7 +13,7 @@ export const Microphone: IconProps
 export const Chevron: IconProps
 export const Checkmark: IconProps
 export const Apple: IconProps
-export const Speaker: IconProps
+export const Speaker: IconProps<SpeakerProps>
 export const XMarkCircle: IconProps
 export const XMark: IconProps
 export const Eyedropper: IconProps
