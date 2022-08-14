@@ -6,7 +6,7 @@
     "ecmaVersion": "latest",
     "project": "./tsconfig.json"
   },
-  "ignorePatterns": ["**/*.d.ts"],
+  "ignorePatterns": ["**/*.d.ts", "tailwind.config.js", "plopfile.js"],
   "rules": {
     "prettier/prettier": "error",
     "simple-import-sort/imports": "error",
