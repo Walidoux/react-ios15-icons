@@ -13,10 +13,12 @@ type RangeIt<F extends number, T extends number> = Exclude<
   Enumerate<F>
 >
 
-export interface IconProps extends SVGAttributes<SVGElement> {
+interface CustomProps {
   color?: string
   size?: string | number
 }
+
+export type IconProps<P = unknown> = SVGAttributes<SVGElement> & P & CustomProps
 
 export interface BatteryProps {
   progression: RangeIt<0, 101>
@@ -28,4 +30,8 @@ export interface CellularProps {
 
 export interface WifiProps {
   internet: 'noWifi' | 'fast' | 'normal' | 'slow'
+}
+
+export interface PhoneProps {
+  isPutDown: boolean
 }

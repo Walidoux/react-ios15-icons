@@ -1,10 +1,9 @@
 {
-  "name": "react-ios15-icons",
-  "version": "1.0.0-dev",
+  "name": "@walidoux/react-ios15-icons",
+  "version": "0.0.0-development",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/react-ios15-icons.esm.js",
-  "private": true,
   "description": "A react library providing ios-15 icons.",
   "repository": {
     "type": "git",
@@ -96,6 +95,8 @@
     }
   ],
   "publishConfig": {
-    "access": "public"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public",
+    "tag": "latest"
   }
 }
