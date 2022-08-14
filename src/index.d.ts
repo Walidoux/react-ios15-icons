@@ -7,17 +7,17 @@ import type {
 } from './IconProps'
 
 /// @GENERATORS: COMPONENT EXPORTS
-export const Camera: Icon
-export const Microphone: Icon
-export const Chevron: Icon
-export const Checkmark: Icon
-export const Apple: Icon
-export const Speaker: Icon
-export const XMarkCircle: Icon
-export const XMark: Icon
-export const Eyedropper: Icon
-export const Flashlight: Icon
-export const Shareplay: Icon
+export const Camera: IconProps
+export const Microphone: IconProps
+export const Chevron: IconProps
+export const Checkmark: IconProps
+export const Apple: IconProps
+export const Speaker: IconProps
+export const XMarkCircle: IconProps
+export const XMark: IconProps
+export const Eyedropper: IconProps
+export const Flashlight: IconProps
+export const Shareplay: IconProps
 export const Phone: IconProps<PhoneProps>
 export const Share: IconProps
 export const Play: IconProps
