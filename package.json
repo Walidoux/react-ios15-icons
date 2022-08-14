@@ -1,5 +1,5 @@
 {
-  "name": "react-ios15-icons",
+  "name": "@walidoux/react-ios15-icons",
   "version": "1.0.0-dev",
   "license": "MIT",
   "main": "dist/index.js",
