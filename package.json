@@ -7,7 +7,7 @@
   "description": "A react library providing ios-15 icons.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Walidoux/react-15-icons"
+    "url": "https://github.com/Walidoux/react-ios15-icons"
   },
   "bugs": {
     "url": "https://github.com/Walidoux/react-ios15-icons/issues"
