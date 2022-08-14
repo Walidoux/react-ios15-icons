@@ -1,12 +1,26 @@
 import type {
+  /// @GENERATORS: COMPONENT IMPORTS
   BatteryProps,
   CellularProps,
   IconProps,
   PhoneProps,
+  SpeakerProps,
   WifiProps
 } from './IconProps'
 
 /// @GENERATORS: COMPONENT EXPORTS
+export const Heart: IconProps
+export const Camera: IconProps
+export const Microphone: IconProps
+export const Chevron: IconProps
+export const Checkmark: IconProps
+export const Apple: IconProps
+export const Speaker: IconProps<SpeakerProps>
+export const XMarkCircle: IconProps
+export const XMark: IconProps
+export const Eyedropper: IconProps
+export const Flashlight: IconProps
+export const Shareplay: IconProps
 export const Phone: IconProps<PhoneProps>
 export const Share: IconProps
 export const Play: IconProps

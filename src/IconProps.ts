@@ -35,3 +35,7 @@ export interface WifiProps {
 export interface PhoneProps {
   isPutDown: boolean
 }
+
+export interface SpeakerProps {
+  pitch: 'high' | 'normal' | 'low' | 'idle'
+}
