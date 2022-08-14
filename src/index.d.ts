@@ -2,18 +2,12 @@ import type {
   BatteryProps,
   CellularProps,
   IconProps,
+  PhoneProps,
   WifiProps
 } from './IconProps'
 
 /// @GENERATORS: COMPONENT EXPORTS
-export const Share: Icon
-export const Play: Icon
-export const Wifi: Icon<WifiProps>
-export const Cellular: Icon<CellularProps>
-export const Battery: Icon<BatteryProps>
-export const Loop: Icon
-export const Bookmark: Icon
-export const Star: Icon
+export const Phone: IconProps<PhoneProps>
 export const Share: IconProps
 export const Play: IconProps
 export const Wifi: IconProps<WifiProps>

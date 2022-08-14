@@ -31,3 +31,7 @@ export interface CellularProps {
 export interface WifiProps {
   internet: 'noWifi' | 'fast' | 'normal' | 'slow'
 }
+
+export interface PhoneProps {
+  isPutDown: boolean
+}
