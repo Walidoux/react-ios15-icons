@@ -8,6 +8,9 @@ import type {
 
 export type Icon<T = unknown> = FC<IconProps & T>
 
+/// @GENERATORS: COMPONENT EXPORTS
+export const Share: Icon
+export const Play: Icon
 export const Wifi: Icon<WifiProps>
 export const Cellular: Icon<CellularProps>
 export const Battery: Icon<BatteryProps>
