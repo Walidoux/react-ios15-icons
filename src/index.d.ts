@@ -1,4 +1,5 @@
 import type {
+  /// @GENERATORS: COMPONENT IMPORTS
   BatteryProps,
   CellularProps,
   IconProps,
@@ -8,6 +9,7 @@ import type {
 } from './IconProps'
 
 /// @GENERATORS: COMPONENT EXPORTS
+export const Heart: IconProps
 export const Camera: IconProps
 export const Microphone: IconProps
 export const Chevron: IconProps
