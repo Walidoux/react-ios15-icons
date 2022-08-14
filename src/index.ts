@@ -1,3 +1,6 @@
 export * from './icons/Battery'
+export * from './icons/Bookmark'
 export * from './icons/Cellular'
+export * from './icons/Loop'
+export * from './icons/Star'
 export * from './icons/Wifi'
