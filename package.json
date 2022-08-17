@@ -1,6 +1,6 @@
 {
   "name": "@walidoux/react-ios15-icons",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/react-ios15-icons.esm.js",
