@@ -1,8 +1,7 @@
 {
   "name": "@walidoux/react-ios15-icons",
-  "version": "0.0.0-development",
+  "version": "1.1.0",
   "license": "MIT",
-  "private": "true",
   "main": "dist/index.js",
   "module": "dist/react-ios15-icons.esm.js",
   "description": "A react library providing ios-15 icons.",
