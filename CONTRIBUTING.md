@@ -12,7 +12,7 @@ Contributors and people new to open source alike will find the following guides 
 
 ## Code of Conduct
 
-As a reminder, all contributors are expected to adhere to the Code of Conduct.
+As a reminder, all contributors are expected to adhere to the [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ## Ways to contribute
 
