@@ -1,9 +1,8 @@
 import classNames from 'classnames'
-import type { FC } from 'react'
 
 import { BatteryProps } from '../IconProps'
 
-export const Battery: FC<BatteryProps> = ({ progression }) => (
+export const Battery: React.FC<BatteryProps> = ({ progression }) => (
   <svg
     width='25'
     height='12'
