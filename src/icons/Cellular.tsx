@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { CellularProps } from '../IconProps'
 
 export const Cellular: React.FC<CellularProps> = ({ network }) => (

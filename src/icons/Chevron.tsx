@@ -1,5 +1,3 @@
-import React from 'react'
-
 import type { IconProps } from '../IconProps'
 
 export const Chevron: React.FC<IconProps> = ({ color, size, ...rest }) => (
