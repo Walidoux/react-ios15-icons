@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { IconProps } from '../IconProps'
 
 export const Star: React.FC<IconProps> = ({ color, size, ...rest }) => (

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { WifiProps } from '../IconProps'
 
 export const Wifi: React.FC<WifiProps> = ({ internet }) => (

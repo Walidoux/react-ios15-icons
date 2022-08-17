@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { SpeakerProps } from '../IconProps'
 
 export const Speaker: React.FC<SpeakerProps> = ({ pitch, ...rest }) => (
