@@ -7,8 +7,8 @@ core contributors, and community that goes beyond the main React Native GitHub r
 
 Contributors and people new to open source alike will find the following guides especially useful:
 
-- How to Contribute to Open Source?
-- Building Welcoming Communities?
+- [How to Contribute to Open Source?](https://opensource.guide/how-to-contribute/)
+- [Building Welcoming Communities?](https://opensource.guide/building-community/)
 
 ## Code of Conduct
 
