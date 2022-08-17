@@ -7,7 +7,8 @@
 - [Installation](#installation)
 - [Current version.](#current-version)
 - [Contribution.](#contribution)
-- [Credits](#credits)
+  - [Contribution.](#contribution)
+  - [Code Of Conduct.](./CODE_OF_CONDUCT.md)
 
 ## Installation
 
@@ -47,9 +48,4 @@ These are the supported icon versions beside extra details to get familiar with 
 
 ## Contribution
 
-In order to contribute and improve our icon library, we've set certain rules to maintain...
-everything will be mentioned in the [CHANGELOG](./CHANGELOG.md) file.
-
-## Credits
-
-Thanks to
+If you would like to contribute and improve our project, we've set certain rules to maintain a better scoial and development environment, almost everything is mentioned in the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
