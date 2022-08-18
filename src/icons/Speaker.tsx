@@ -1,13 +1,20 @@
-import { SpeakerProps } from '../IconProps'
+import classNames from 'classnames'
+import React from 'react'
 
-export const Speaker: React.FC<SpeakerProps> = ({ pitch, ...rest }) => (
+import type { IconProps, SpeakerProps } from '../IconProps'
+
+export const Speaker: React.FC<IconProps<SpeakerProps>> = ({
+  pitch,
+  className,
+  ...rest
+}) => (
   <svg
     width='33'
     height='24'
     viewBox='0 0 33 24'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
-    className='fill-current text-black dark:text-white'
+    className={classNames('fill-current text-black dark:text-white', className)}
     {...rest}>
     {pitch === 'idle' && (
       <path

@@ -1,13 +1,16 @@
+import classNames from 'classnames'
+import React from 'react'
+
 import type { IconProps } from '../IconProps'
 
-export const Shareplay: React.FC<IconProps> = ({ color, size, ...rest }) => (
+export const Shareplay: React.FC<IconProps> = ({ className, ...rest }) => (
   <svg
     width='26'
     height='15'
     viewBox='0 0 26 15'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
-    className='fill-current text-black dark:text-white'
+    className={classNames('fill-current text-black dark:text-white', className)}
     {...rest}>
     <g opacity='0.8'>
       <path
