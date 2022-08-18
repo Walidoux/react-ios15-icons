@@ -3,8 +3,6 @@ import classNames from 'classnames'
 import type { IconProps, PhoneProps } from '../IconProps'
 
 export const Phone: React.FC<IconProps<PhoneProps>> = ({
-  color,
-  size,
   isPutDown,
   ...rest
 }) => (
