@@ -324,10 +324,10 @@
     magic-string "^0.26.2"
     react-refresh "^0.14.0"
 
-"@walidoux/react-ios15-icons@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@walidoux/react-ios15-icons/-/react-ios15-icons-1.1.0.tgz#9a3c08bb7dbc999317e2c2bb956c8a08f948c515"
-  integrity sha512-vOd1oDI5anNZsYHi3n+YcjyQhHFgpWcuEdG3wb2py/wZhuw+AwWNCpDRNJZ6kOWaMPj5yplyzkMkx4imUCD3Zw==
+"@walidoux/react-ios15-icons@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@walidoux/react-ios15-icons/-/react-ios15-icons-1.1.1.tgz#ea566b31bdd881c9a0da905cea77bc7ff29eae69"
+  integrity sha512-+rYReG82imlcPZ/DEXp0ZX+GBeRn2coNoS/p8dO04FWbdOTHeeM0GzOQRknZ0Da07hWA5HmhQi7aXFYOYUNq7g==
   dependencies:
     classnames "^2.3.1"
 
