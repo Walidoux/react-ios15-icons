@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Walidoux/react-ios15-icons/compare/v1.1.0...v1.1.1) (2022-08-18)
+
+
+### Bug Fixes
+
+* **chore:** icon props ([#11](https://github.com/Walidoux/react-ios15-icons/issues/11)) ([4d5ab9d](https://github.com/Walidoux/react-ios15-icons/commit/4d5ab9d171604d291bd39967ad1964a5883aeeee)), closes [#9](https://github.com/Walidoux/react-ios15-icons/issues/9) [#10](https://github.com/Walidoux/react-ios15-icons/issues/10)
+
 ## [1.1.0](https://github.com/Walidoux/react-ios15-icons/compare/v1.0.0...v1.1.0) (2022-08-17)
 
 
