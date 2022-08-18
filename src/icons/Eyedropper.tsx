@@ -1,13 +1,16 @@
+import classNames from 'classnames'
+import React from 'react'
+
 import type { IconProps } from '../IconProps'
 
-export const Eyedropper: React.FC<IconProps> = ({ color, size, ...rest }) => (
+export const Eyedropper: React.FC<IconProps> = ({ className, ...rest }) => (
   <svg
     width='19'
     height='20'
     viewBox='0 0 19 20'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
-    className='fill-current text-black dark:text-white'
+    className={classNames('fill-current text-black dark:text-white', className)}
     {...rest}>
     <path
       d='M14.1592 10.3997L14.4316 10.1096C14.915 9.60866 14.9238 9.0198 14.4229 8.51882L14.1768 8.27273C15.5742 7.04226 17.0859 6.91921 18.0703 5.92605C19.4326 4.54616 19.0811 2.55983 18.0352 1.50515C16.998 0.450459 15.0117 0.125264 13.6143 1.46999C12.6123 2.44558 12.498 3.96608 11.2676 5.36355L11.0303 5.11745C10.5293 4.61648 9.93164 4.63405 9.43066 5.10866L9.14062 5.38112C8.55176 5.93483 8.63965 6.46218 9.16699 6.98073L9.51855 7.34108L3.08496 13.7747C0.254883 16.6135 1.37988 16.552 0 18.468L0.905273 19.4173C2.75977 18.0462 2.86523 19.2854 5.72168 16.4466L12.1992 10.013L12.5596 10.3733C13.0869 10.8919 13.5967 10.9798 14.1592 10.3997ZM2.96191 16.6223C2.67188 16.3059 2.72461 16.0071 3.0498 15.6819L10.4414 8.25515L11.3027 9.12526L3.88477 16.5432C3.59473 16.8333 3.23438 16.9212 2.96191 16.6223Z'

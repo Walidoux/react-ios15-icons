@@ -1,13 +1,16 @@
+import classNames from 'classnames'
+import React from 'react'
+
 import type { IconProps } from '../IconProps'
 
-export const XMarkCircle: React.FC<IconProps> = ({ color, size, ...rest }) => (
+export const XMarkCircle: React.FC<IconProps> = ({ className, ...rest }) => (
   <svg
     width='17'
     height='18'
     viewBox='0 0 17 18'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
-    className='fill-current text-black dark:text-white'
+    className={classNames('fill-current text-black dark:text-white', className)}
     {...rest}>
     <path
       fillRule='evenodd'

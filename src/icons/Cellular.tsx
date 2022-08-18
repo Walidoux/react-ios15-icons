@@ -1,6 +1,13 @@
-import { CellularProps } from '../IconProps'
+import classNames from 'classnames'
+import React from 'react'
 
-export const Cellular: React.FC<CellularProps> = ({ network }) => (
+import { CellularProps, IconProps } from '../IconProps'
+
+export const Cellular: React.FC<IconProps<CellularProps>> = ({
+  network,
+  className,
+  ...rest
+}) => (
   <svg
     width='18'
     height='12'
@@ -8,7 +15,8 @@ export const Cellular: React.FC<CellularProps> = ({ network }) => (
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
     opacity={network === 'noNetwork' ? 0.2 : 1}
-    className='fill-current text-black dark:text-white'>
+    className={classNames('fill-current text-black dark:text-white', className)}
+    {...rest}>
     <path
       d='M14.623 1.5659C14.6 1.68182 14.6 1.82121 14.6 2.1V9.80001C14.6 10.0788 14.6 10.2182 14.623 10.3341C14.7177 10.8101 15.0899 11.1823 15.5659 11.2769C15.6818 11.3 15.8212 11.3 16.1 11.3C16.3788 11.3 16.5182 11.3 16.6341 11.2769C17.1101 11.1823 17.4822 10.8101 17.5769 10.3341C17.6 10.2182 17.6 10.0788 17.6 9.80001V2.10001C17.6 1.82121 17.6 1.68182 17.5769 1.5659C17.4822 1.08987 17.1101 0.717752 16.6341 0.623064C16.5182 0.600006 16.3788 0.600006 16.1 0.600006C15.8212 0.600006 15.6818 0.600006 15.5659 0.623064C15.0899 0.717752 14.7177 1.08987 14.623 1.5659Z'
       fill='currentColor'
