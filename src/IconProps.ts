@@ -1,4 +1,4 @@
-import type { SVGAttributes } from 'react'
+import type { FC, ReactNode } from 'react'
 
 // https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-5.html#tail-recursion-elimination-on-conditional-types
 type Enumerate<
@@ -13,9 +13,17 @@ type RangeIt<F extends number, T extends number> = Exclude<
   Enumerate<F>
 >
 
-type StrictSVGTypes = Omit<SVGAttributes<SVGElement>, 'children'>
+interface DefaultProps {
+  filled?: boolean
+  children?: ReactNode
+  className?: string
+}
 
-export type IconProps<P = unknown> = StrictSVGTypes & P
+export type IconProps<P = unknown, WithFillProperty = false> = FC<
+  WithFillProperty extends true
+    ? DefaultProps
+    : Omit<DefaultProps, 'filled'> & P
+>
 
 export interface BatteryProps {
   progression: RangeIt<0, 101>
