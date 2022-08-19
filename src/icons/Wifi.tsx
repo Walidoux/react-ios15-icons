@@ -1,21 +1,16 @@
-import classNames from 'classnames'
 import React from 'react'
 
+import { Icon } from '../Icon'
 import type { IconProps, WifiProps } from '../IconProps'
 
-export const Wifi: React.FC<IconProps<WifiProps>> = ({
+export const Wifi: IconProps<WifiProps> = ({
   internet,
   className,
   ...rest
 }) => (
-  <svg
-    width='16'
-    height='12'
-    viewBox='0 0 16 12'
-    fill='none'
-    xmlns='http://www.w3.org/2000/svg'
-    display={internet !== 'noWifi' ? 'block' : 'none'}
-    className={classNames('fill-current text-black dark:text-white', className)}
+  <Icon
+    styles={{ display: internet !== 'noWifi' ? 'block' : 'none' }}
+    className={className}
     {...rest}>
     <path
       d='M8.30043 2.69635C10.5348 2.69645 12.6838 3.55501 14.3032 5.09456C14.4251 5.21342 14.62 5.21192 14.7401 5.0912L15.9058 3.91479C15.9666 3.85356 16.0005 3.77062 16 3.68432C15.9995 3.59803 15.9646 3.51549 15.9031 3.45498C11.6528 -0.618333 4.9474 -0.618333 0.697078 3.45498C0.635507 3.51544 0.600578 3.59796 0.600013 3.68425C0.599439 3.77055 0.633289 3.85351 0.694053 3.91479L1.86006 5.0912C1.98007 5.21211 2.17514 5.21361 2.29701 5.09456C3.91658 3.5549 6.0658 2.69635 8.30043 2.69635Z'
@@ -36,5 +31,5 @@ export const Wifi: React.FC<IconProps<WifiProps>> = ({
           : '1'
       }
     />
-  </svg>
+  </Icon>
 )

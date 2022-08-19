@@ -1,21 +1,14 @@
-import classNames from 'classnames'
 import React from 'react'
 
+import { Icon } from '../Icon'
 import type { IconProps, SpeakerProps } from '../IconProps'
 
-export const Speaker: React.FC<IconProps<SpeakerProps>> = ({
+export const Speaker: IconProps<SpeakerProps> = ({
   pitch,
   className,
   ...rest
 }) => (
-  <svg
-    width='33'
-    height='24'
-    viewBox='0 0 33 24'
-    fill='none'
-    xmlns='http://www.w3.org/2000/svg'
-    className={classNames('fill-current text-black dark:text-white', className)}
-    {...rest}>
+  <Icon className={className} {...rest}>
     {pitch === 'idle' && (
       <path
         d='M2.92969 14.9136C2.54297 14.9136 2.35547 14.7261 2.35547 14.3393V9.71043C2.35547 9.31199 2.54297 9.12449 2.92969 9.12449H6.58594C6.90234 9.12449 7.13672 9.0659 7.40625 8.8198L12.0703 4.5659C12.1289 4.51902 12.1875 4.48386 12.2578 4.48386C12.3516 4.48386 12.4219 4.54246 12.4219 4.64793V19.355C12.4219 19.4721 12.3516 19.5307 12.2695 19.5307C12.1992 19.5307 12.1406 19.5073 12.0703 19.4487L7.40625 15.2182C7.13672 14.9721 6.90234 14.9136 6.58594 14.9136H2.92969Z'
@@ -44,5 +37,5 @@ export const Speaker: React.FC<IconProps<SpeakerProps>> = ({
         fillOpacity={0.6}
       />
     )}
-  </svg>
+  </Icon>
 )

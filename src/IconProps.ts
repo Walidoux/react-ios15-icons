@@ -1,4 +1,4 @@
-import type { FC, ReactNode } from 'react'
+import type { CSSProperties, FC, ReactNode } from 'react'
 
 // https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-5.html#tail-recursion-elimination-on-conditional-types
 type Enumerate<
@@ -17,11 +17,12 @@ interface DefaultProps {
   filled?: boolean
   children?: ReactNode
   className?: string
+  styles?: CSSProperties
 }
 
 export type IconProps<P = unknown, WithFillProperty = false> = FC<
   WithFillProperty extends true
-    ? DefaultProps
+    ? DefaultProps & P
     : Omit<DefaultProps, 'filled'> & P
 >
 
@@ -43,4 +44,24 @@ export interface PhoneProps {
 
 export interface SpeakerProps {
   pitch: 'high' | 'normal' | 'low' | 'idle'
+}
+
+export interface ChevronProps {
+  direction: 'up' | 'down' | 'left' | 'right'
+}
+
+export interface EyedropperProps {
+  fillLevel: 'half' | 'full' | 'empty'
+}
+
+export interface FlashLightProps {
+  isOn: boolean
+}
+
+export interface MicrophoneProps {
+  disabled?: boolean
+}
+
+export interface PlayProps {
+  disabled?: boolean
 }
