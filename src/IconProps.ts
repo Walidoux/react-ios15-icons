@@ -46,7 +46,7 @@ export interface PhoneProps {
   isPutDown: boolean
 }
 
-export interface SpeakerProps {
+export interface SpeakerProps extends DisableProp {
   pitch: 'high' | 'normal' | 'low' | 'idle'
 }
 
