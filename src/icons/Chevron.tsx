@@ -1,21 +1,24 @@
 import classNames from 'classnames'
 import React from 'react'
 
-import type { IconProps } from '../IconProps'
+import { Icon } from '../Icon'
+import type { ChevronProps, IconProps } from '../IconProps'
 
-export const Chevron: React.FC<IconProps> = ({ className, ...rest }) => (
-  <svg
-    width='9'
-    height='16'
-    viewBox='0 0 9 16'
-    fill='none'
-    xmlns='http://www.w3.org/2000/svg'
-    className={classNames('fill-current text-black dark:text-white', className)}
+export const Chevron: IconProps<ChevronProps> = ({
+  className,
+  direction,
+  ...rest
+}) => (
+  <Icon
+    className={classNames(className, {
+      'rotate-180': direction === 'up',
+      'rotate-90': direction === 'left',
+      '-rotate-90': direction === 'right'
+    })}
     {...rest}>
     <path
-      d='M9.00098 8C9.00098 7.79248 8.91797 7.60156 8.76025 7.45215L2.18604 1.01074C2.03662 0.869629 1.854 0.794922 1.63818 0.794922C1.21484 0.794922 0.882812 1.11865 0.882812 1.55029C0.882812 1.75781 0.96582 1.94873 1.09863 2.08984L7.1416 8L1.09863 13.9102C0.96582 14.0513 0.882812 14.2339 0.882812 14.4497C0.882812 14.8813 1.21484 15.2051 1.63818 15.2051C1.854 15.2051 2.03662 15.1304 2.18604 14.981L8.76025 8.54785C8.91797 8.39014 9.00098 8.20752 9.00098 8Z'
-      fill='currentColor'
-      fillOpacity={0.3}
+      d='M14 18.4883C14.3076 18.4795 14.5889 18.3652 14.8174 18.1191L21.4971 11.2812C21.6904 11.0879 21.7959 10.8418 21.7959 10.5518C21.7959 9.97168 21.3389 9.50586 20.7588 9.50586C20.4775 9.50586 20.2051 9.62012 20.0029 9.82227L14.0088 15.9834L7.99707 9.82227C7.79492 9.62891 7.53125 9.50586 7.24121 9.50586C6.66113 9.50586 6.2041 9.97168 6.2041 10.5518C6.2041 10.8418 6.30957 11.0879 6.50293 11.2812L13.1914 18.1191C13.4287 18.3652 13.6924 18.4883 14 18.4883Z'
+      fill='#1C1C1E'
     />
-  </svg>
+  </Icon>
 )

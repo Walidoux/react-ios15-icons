@@ -12,7 +12,12 @@ module.exports = (
       },
       {
         type: 'confirm',
-        name: 'hasProps',
+        name: 'hasFilledProp',
+        message: 'Does this icon require the [filled] prop ?'
+      },
+      {
+        type: 'confirm',
+        name: 'hasCustomProps',
         message: 'Are you willing to give him custom props ?'
       }
     ],
@@ -21,7 +26,13 @@ module.exports = (
         {
           type: 'add',
           path: 'src/icons/{{ properCase name }}.tsx',
-          templateFile: 'generators/Icon.tsx.hbs'
+          templateFile: data.hasFilledProp
+            ? data.hasCustomProps
+              ? 'generators/FilledIconProps.tsx.hbs'
+              : 'generators/FilledIcon.tsx.hbs'
+            : data.hasCustomProps
+            ? 'generators/IconProps.tsx.hbs'
+            : 'generators/Icon.tsx.hbs'
         },
         {
           type: 'append',
@@ -34,23 +45,28 @@ module.exports = (
           path: 'src/index.d.ts',
           pattern: /(\/\/\/ @GENERATORS: COMPONENT EXPORTS)/g,
           template: `export const {{ properCase name }}: IconProps${
-            data.hasProps ? '<{{ properCase name }}Props>' : ''
+            data.hasFilledProp
+              ? `<${
+                  data.hasCustomProps ? '{{ properCase name }}Props' : 'unknown'
+                }, true>`
+              : ''
           }`
         }
       ]
 
-      if (data.hasProps)
+      if (data.hasCustomProps)
         currentActions.push(
           {
             type: 'append',
             path: 'src/IconProps.ts',
-            templateFile: 'generators/IconProps.ts.hbs'
+            template:
+              'export interface {{ properCase name }}Props { defaultProp: unknown }'
           },
           {
             type: 'append',
             path: 'src/index.d.ts',
             pattern: /(\/\/\/ @GENERATORS: COMPONENT IMPORTS)/g,
-            template: '{{ properCase name }},'
+            template: '{{ properCase name }}Props,'
           }
         )
 
