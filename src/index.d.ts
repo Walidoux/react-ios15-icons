@@ -8,6 +8,7 @@ import type {
   MicrophoneProps,
   PhoneProps,
   PlayProps,
+  ShareplayProps,
   SpeakerProps,
   WifiProps
 } from './IconProps'
@@ -24,7 +25,7 @@ export const XMarkCircle: IconProps
 export const XMark: IconProps
 export const Eyedropper: IconProps<EyedropperProps>
 export const Flashlight: IconProps<FlashLightProps>
-export const Shareplay: IconProps
+export const Shareplay: IconProps<ShareplayProps>
 export const Phone: IconProps<PhoneProps, true>
 export const Share: IconProps
 export const Play: IconProps<PlayProps, true>

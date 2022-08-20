@@ -65,3 +65,7 @@ export interface MicrophoneProps {
 export interface PlayProps {
   disabled?: boolean
 }
+
+export interface ShareplayProps {
+  disabled?: boolean
+}
