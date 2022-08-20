@@ -45,10 +45,10 @@ module.exports = (
           path: 'src/index.d.ts',
           pattern: /(\/\/\/ @GENERATORS: COMPONENT EXPORTS)/g,
           template: `export const {{ properCase name }}: IconProps${
-            data.hasCustomProps
-              ? `<{{ properCase name }}Props${
-                  data.hasFilledProp ? ', true' : ''
-                }>`
+            data.hasFilledProp
+              ? `<${
+                  data.hasCustomProps ? '{{ properCase name }}Props' : 'unknown'
+                }, true>`
               : ''
           }`
         }
