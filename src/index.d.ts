@@ -13,6 +13,7 @@ import type {
 } from './IconProps'
 
 /// @GENERATORS: COMPONENT EXPORTS
+export const Video: IconProps<unknown, true>
 export const Message: IconProps<unknown, true>
 export const Flag: IconProps<unknown, true>
 export const Heart: IconProps<unknown, true>
