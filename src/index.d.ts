@@ -2,6 +2,7 @@ import type {
   /// @GENERATORS: COMPONENT IMPORTS
   BatteryProps,
   CellularProps,
+  ChevronProps,
   DisableProp,
   EyedropperProps,
   FlashLightProps,
@@ -12,6 +13,8 @@ import type {
 } from './IconProps'
 
 /// @GENERATORS: COMPONENT EXPORTS
+export const Message: IconProps<unknown, true>
+export const Flag: IconProps<unknown, true>
 export const Heart: IconProps<unknown, true>
 export const Camera: IconProps<unknown, true>
 export const Microphone: IconProps<DisableProp, true>
