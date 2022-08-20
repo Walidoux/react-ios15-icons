@@ -15,21 +15,19 @@ import type {
 export const Heart: IconProps<unknown, true>
 export const Camera: IconProps<unknown, true>
 export const Microphone: IconProps<DisableProp, true>
-export const Chevron: IconProps
+export const Chevron: IconProps<ChevronProps>
 export const Checklist: IconProps
 export const Apple: IconProps
-export const Speaker: IconProps<SpeakerProps>
+export const Speaker: IconProps<SpeakerProps, true>
 export const XMarkCircle: IconProps
 export const XMark: IconProps
 export const Eyedropper: IconProps<EyedropperProps>
 export const Flashlight: IconProps<FlashLightProps>
 export const Shareplay: IconProps<DisableProp>
 export const Phone: IconProps<PhoneProps, true>
-export const Share: IconProps
 export const Play: IconProps<DisableProp, true>
 export const Wifi: IconProps<WifiProps>
 export const Cellular: IconProps<CellularProps>
 export const Battery: IconProps<BatteryProps>
 export const Loop: IconProps
 export const Bookmark: IconProps<unknown, true>
-export const Star: IconProps
