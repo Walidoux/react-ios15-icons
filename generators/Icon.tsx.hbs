@@ -1,13 +1,6 @@
+import { Icon } from '../Icon'
 import type { IconProps } from '../IconProps'
 
-export const {{ properCase name }}: React.FC<IconProps> = ({   ...rest }) => (
-  <svg
-    width='x'
-    height='x'
-    viewBox='0 0 x x'
-    fill='none'
-    xmlns='http://www.w3.org/2000/svg'
-     className={'fill-current text-black dark:text-white', className}
-    {...rest}>
-  </svg>
+export const {{ properCase name }}: IconProps = ({ className, ...rest }) => (
+  <Icon className={className} {...rest}></Icon>
 )
