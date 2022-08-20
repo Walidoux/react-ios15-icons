@@ -1,9 +1,9 @@
 import React from 'react'
 
 import { Icon } from '../Icon'
-import type { IconProps, MicrophoneProps } from '../IconProps'
+import type { DisableProp, IconProps } from '../IconProps'
 
-export const Microphone: IconProps<MicrophoneProps, true> = ({
+export const Microphone: IconProps<DisableProp, true> = ({
   className,
   filled,
   disabled,

@@ -2,13 +2,11 @@ import type {
   /// @GENERATORS: COMPONENT IMPORTS
   BatteryProps,
   CellularProps,
+  DisableProp,
   EyedropperProps,
   FlashLightProps,
   IconProps,
-  MicrophoneProps,
   PhoneProps,
-  PlayProps,
-  ShareplayProps,
   SpeakerProps,
   WifiProps
 } from './IconProps'
@@ -16,7 +14,7 @@ import type {
 /// @GENERATORS: COMPONENT EXPORTS
 export const Heart: IconProps<unknown, true>
 export const Camera: IconProps<unknown, true>
-export const Microphone: IconProps<MicrophoneProps, true>
+export const Microphone: IconProps<DisableProp, true>
 export const Chevron: IconProps
 export const Checklist: IconProps
 export const Apple: IconProps
@@ -25,10 +23,10 @@ export const XMarkCircle: IconProps
 export const XMark: IconProps
 export const Eyedropper: IconProps<EyedropperProps>
 export const Flashlight: IconProps<FlashLightProps>
-export const Shareplay: IconProps<ShareplayProps>
+export const Shareplay: IconProps<DisableProp>
 export const Phone: IconProps<PhoneProps, true>
 export const Share: IconProps
-export const Play: IconProps<PlayProps, true>
+export const Play: IconProps<DisableProp, true>
 export const Wifi: IconProps<WifiProps>
 export const Cellular: IconProps<CellularProps>
 export const Battery: IconProps<BatteryProps>

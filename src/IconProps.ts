@@ -26,6 +26,10 @@ export type IconProps<P = unknown, WithFillProperty = false> = FC<
     : Omit<DefaultProps, 'filled'> & P
 >
 
+export interface DisableProp {
+  disabled?: boolean
+}
+
 export interface BatteryProps {
   progression: RangeIt<0, 101>
 }
@@ -56,16 +60,4 @@ export interface EyedropperProps {
 
 export interface FlashLightProps {
   isOn: boolean
-}
-
-export interface MicrophoneProps {
-  disabled?: boolean
-}
-
-export interface PlayProps {
-  disabled?: boolean
-}
-
-export interface ShareplayProps {
-  disabled?: boolean
 }
