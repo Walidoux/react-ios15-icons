@@ -1,5 +1,6 @@
 import type {
   /// @GENERATORS: COMPONENT IMPORTS
+  FolderProps,
   BatteryProps,
   CellularProps,
   ChevronProps,
@@ -13,6 +14,7 @@ import type {
 } from './IconProps'
 
 /// @GENERATORS: COMPONENT EXPORTS
+export const Folder: IconProps<FolderProps, true>
 export const SquarePencil: IconProps
 export const Send: IconProps<unknown, true>
 export const Trash: IconProps<DisableProp, true>
