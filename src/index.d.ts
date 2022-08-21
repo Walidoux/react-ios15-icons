@@ -14,6 +14,7 @@ import type {
 } from './IconProps'
 
 /// @GENERATORS: COMPONENT EXPORTS
+export const FolderQuestionMark: IconProps<unknown, true>
 export const Folder: IconProps<FolderProps, true>
 export const SquarePencil: IconProps
 export const Send: IconProps<unknown, true>
