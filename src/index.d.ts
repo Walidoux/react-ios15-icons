@@ -13,6 +13,7 @@ import type {
 } from './IconProps'
 
 /// @GENERATORS: COMPONENT EXPORTS
+export const SquarePencil: IconProps
 export const Send: IconProps<unknown, true>
 export const Trash: IconProps<DisableProp, true>
 export const Video: IconProps<unknown, true>
