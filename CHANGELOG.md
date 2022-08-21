@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/Walidoux/react-ios15-icons/compare/v1.2.0...v1.3.0) (2022-08-21)
+
+
+### Features
+
+* **icons:** implement additional icons ([#15](https://github.com/Walidoux/react-ios15-icons/issues/15)) ([4fac4da](https://github.com/Walidoux/react-ios15-icons/commit/4fac4dadcfbdce28b2c72df1e063d63523f9c3ec))
+
 ## [1.2.0](https://github.com/Walidoux/react-ios15-icons/compare/v1.1.1...v1.2.0) (2022-08-20)
 
 
