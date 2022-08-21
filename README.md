@@ -8,6 +8,7 @@
 - [Current version.](#current-version)
 - [Contribution.](#contribution)
   - [Contribution.](#contribution)
+  - [How do I start ?](#how-do-i-start)
   - [Code Of Conduct.](./CODE_OF_CONDUCT.md)
 
 ## Installation
@@ -49,3 +50,12 @@ These are the supported icon versions beside extra details to get familiar with 
 ## Contribution
 
 If you would like to contribute and improve our project, we've set certain rules to maintain a better scoial and development environment, almost everything is mentioned in the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
+
+### How do I start ?
+
+In order to create an icon, you need to generate one by executing:
+
+> NPM : `npm run generate <ComponentName>` \
+> YARN : `yarn generate <ComponentName>`
+
+2 questions will be asked to you which helps giving instructions that will be provide a start code for your icon.
