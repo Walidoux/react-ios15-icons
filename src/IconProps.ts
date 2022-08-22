@@ -69,3 +69,7 @@ export interface FolderProps {
 export interface GearProps {
   hasDouble?: boolean
 }
+
+export interface BellProps extends DisableProp {
+  hasNotification?: boolean
+}

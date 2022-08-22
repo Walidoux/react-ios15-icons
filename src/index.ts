@@ -1,6 +1,7 @@
 /// @GENERATORS: COMPONENT EXPORTS
 export * from './icons/Apple'
 export * from './icons/Battery'
+export * from './icons/Bell'
 export * from './icons/Bookmark'
 export * from './icons/Camera'
 export * from './icons/Cellular'
