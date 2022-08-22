@@ -4,5 +4,6 @@ import type { IconProps, {{ properCase name }}Props } from '../IconProps'
 export const {{ properCase name }}: IconProps<{{ properCase name }}Props, true> = ({
   className,
   filled,
+  defaultProp,
   ...rest
 }) => <Icon className={className} {...rest}></Icon>
