@@ -19,7 +19,7 @@ export const Gear: IconProps<GearProps, true> = ({
       />
     )}
 
-    {(hasDouble === true || hasDouble != null) && (
+    {hasDouble === true && (
       <path
         fill='currentColor'
         d={
