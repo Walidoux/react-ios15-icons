@@ -17,6 +17,8 @@ interface DefaultProps {
   children?: ReactNode
   className?: string
   styles?: CSSProperties
+  height?: number
+  width?: number
 }
 
 export type IconProps<P = unknown, WithFillProperty = false> = FC<
