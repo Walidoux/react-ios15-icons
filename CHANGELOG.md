@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/Walidoux/react-ios15-icons/compare/v1.3.0...v1.3.1) (2022-08-22)
+
+
+### Bug Fixes
+
+* **Icon:** clean up props with high default size ([241b9dc](https://github.com/Walidoux/react-ios15-icons/commit/241b9dc51f6c08147f8d9eb8ce1ceebcec0b8cc3))
+
 ## [1.3.0](https://github.com/Walidoux/react-ios15-icons/compare/v1.2.0...v1.3.0) (2022-08-21)
 
 
