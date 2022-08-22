@@ -1,3 +1,16 @@
+## [1.4.0](https://github.com/Walidoux/react-ios15-icons/compare/v1.3.1...v1.4.0) (2022-08-22)
+
+
+### Features
+
+* additional icons ([#16](https://github.com/Walidoux/react-ios15-icons/issues/16)) ([34c4ec9](https://github.com/Walidoux/react-ios15-icons/commit/34c4ec938ec776a9a97890c5bf96288d9974475c))
+
+
+### Bug Fixes
+
+* **generators:** unsed prop template ([d8b1d4b](https://github.com/Walidoux/react-ios15-icons/commit/d8b1d4b73c12b13e105604dc31ad742ef1426acb))
+* **icons/Battery:** black to currentColor & resolve non desired size ([b3435ab](https://github.com/Walidoux/react-ios15-icons/commit/b3435abd09ec180e3ed686a21140c9832df846e2))
+
 ## [1.3.1](https://github.com/Walidoux/react-ios15-icons/compare/v1.3.0...v1.3.1) (2022-08-22)
 
 
