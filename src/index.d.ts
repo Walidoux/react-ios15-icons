@@ -1,5 +1,7 @@
 import type {
   /// @GENERATORS: COMPONENT IMPORTS
+  BellProps,
+  GearProps,
   FolderProps,
   BatteryProps,
   CellularProps,
@@ -14,6 +16,8 @@ import type {
 } from './IconProps'
 
 /// @GENERATORS: COMPONENT EXPORTS
+export const Bell: IconProps<BellProps, true>
+export const Gear: IconProps<GearProps, true>
 export const FolderQuestionMark: IconProps<unknown, true>
 export const Folder: IconProps<FolderProps, true>
 export const SquarePencil: IconProps

@@ -65,3 +65,11 @@ export type FolderPropType = 'add' | 'remove' | 'question' | 'user' | 'settings'
 export interface FolderProps {
   type?: FolderPropType
 }
+
+export interface GearProps {
+  hasDouble?: boolean
+}
+
+export interface BellProps extends DisableProp {
+  hasNotification?: boolean
+}
